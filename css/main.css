@@ -1,0 +1,9 @@
+body {font-family: "Lato", sans-serif}
+
+.mySlides {display: none}
+
+.lang-fr {display: none !important;}
+
+.w3-custom-green,.w3-hover-custom-green:hover{color:#000!important;background-color:#b7db74!important}
+
+.w3-dark-green,.w3-hover-dark-green:hover{color:#000!important;background-color:#478a53!important}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Automatic Reconstruction of the Genealogy of Plots and Buildings Using Historical Sources</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-dark-green w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="./demo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DEMO</a>
+    <a href="./resources.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS & RESOURCES</a>
+    <a href="https://www.umr-lastig.fr/solenn-tual/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACADEMIC WEBSITE</a>
+    <!--<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-dark-green w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="./demo.html" class="w3-bar-item w3-button w3-padding-large lang-eng" onclick="myFunction()">DEMO</a>
+  <a href="./resources.html" class="w3-bar-item w3-button w3-padding-large lang-eng" onclick="myFunction()">PUBLICATIONS & RESOURCES</a>
+  <a href="https://www.umr-lastig.fr/solenn-tual/" class="w3-bar-item w3-button w3-padding-large lang-eng" onclick="myFunction()">ACADEMIC WEBSITE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Title Section-->
+   <div>
+    <h1 class="w3-container w3-content w3-center w3-padding-64">Automatic Reconstruction of the Genealogy of Plots and Buildings Using Historical Sources</h1>
+    <p class="w3-opacity w3-center"><i>PhD thesis by Solenn Tual, defended on December 16, 2026.<br>
+      PhD in Sciences and Technologies of Geographical Information. Université Gustave Eiffel / Doctoral School MSTIC.</i></p>
+   </div>
+
+  <!-- The Abstract Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="abstract">
+    <h3 class="w3-wide lang-eng">ABSTRACT</h3>
+    <p class="w3-justify lang-eng">My PhD Abstract</p>
+  </div>
+
+  <!-- The Documents Section -->
+  <div class="w3-light-grey" id="landregistrypres">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h3 class="w3-wide w3-center">THE 19TH CENTURY FRENCH LAND REGISTRY</h3>
+      <p class="w3-opacity w3-center"></p>
+        <div class="w3-row w3-padding-64">
+        <div class="w3-third">
+          <p class="lang-fr">Plan parcellaire de Marolles-en-Brie, Section C. 1811 (3P XXX)</p>
+          <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Plan parcellaire" style="width:60%">
+        </div>
+        <div class="w3-third">
+          <p class="lang-fr">Extrait du registre d'états de sections de Marolles-en-Brie (3P XXX)</p>
+          <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Extrait du registre d'états de sections" style="width:60%">
+        </div>
+        <div class="w3-third">
+          <p class="lang-fr">Extrait de la matrice des contribuables.</p>
+          <img src="/w3images/bandmember.jpg" class="w3-round" alt="Extrait de la matrice" style="width:60%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h3 class="w3-wide w3-center">CONTACT</h3>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-github" style="width:30px"><a href="https://github.com/solenn-tl"> </i>GitHub : solenn-tl</a><br>
+        <i class="fa fa-envelope" style="width:30px"> </i>Email: solenntual<!--no-spam-->.pro@gmail.com<br>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://github.com/solenn-tl"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <p class="w3-medium">Maintained by Solenn Tual. Source code adaptated from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script src="./js/home.js"></script>
+
+</body>
+</html>
